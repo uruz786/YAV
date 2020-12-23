@@ -1,0 +1,31 @@
+ #main{
+     text-align: center;
+     font-style: italic;
+     background-color: antiquewhite;
+     color: brown;
+     font-size: 40px;
+ }
+
+ #div1{
+     background-color: yellowgreen;
+     font-style: italic;
+ }
+ 
+ #fullframe{
+     margin: 30px;
+
+ }
+ #div3{
+     background-color: olive;
+     font-style: italic;
+ }
+
+ #div2{
+     background-color: thistle;
+     font-style: italic;
+ }
+
+ #div4{
+     background-color: rosybrown;
+     font-style: italic;
+ }
