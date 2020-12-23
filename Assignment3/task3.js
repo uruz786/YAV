@@ -6,7 +6,7 @@ var update = document.getElementById("update");
 
 var get = document.getElementById("get");
 
-const url = "https://crudcrud.com/api/0e26887e05f042baab2540c9eaa16eb1" ;
+const url = "https://crudcrud.com/api/7154d750d70643c582ce5075b2cc69ed" ;
 
 submit.addEventListener("click", () => {
     var name_post = document.getElementById("name_post");
