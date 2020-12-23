@@ -69,4 +69,8 @@ submit.addEventListener("click", () => {
     });
     
   });
+
+
+
+// I AM INDIAN NOT NEPALI . . .SSSSS
   
