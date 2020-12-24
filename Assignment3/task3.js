@@ -6,16 +6,16 @@ var update = document.getElementById("update");
 
 var get = document.getElementById("get");
 
-const url = "https://crudcrud.com/api/7154d750d70643c582ce5075b2cc69ed" ;
+const url = "https://crudcrud.com/api/550eed5624864d20b0314f798bb38d28" ;
 
 submit.addEventListener("click", () => {
     var name_post = document.getElementById("name_post");
-    var email_post = document.getElementById("email_post");
+    var address_post = document.getElementById("address_post");
     var phone_post = document.getElementById("phone_post");
   
     var post_data = {
-      name: name_post.value,
-      email: email_post.value,
+      name : name_post.value,
+      address: address_post.value,
       phone: phone_post.value
     };
     console.log(post_data);
@@ -27,12 +27,12 @@ submit.addEventListener("click", () => {
   update.addEventListener("click", () => {
     var id_update = document.getElementById("id_update");
     var name_update = document.getElementById("name_update");
-    var email_update = document.getElementById("email_update");
+    var address_update = document.getElementById("address_update");
     var phone_update = document.getElementById("phone_update");
   
     var update_data = {
       name: name_update.value,
-      email: email_update.value,
+      address: address_update.value,
       phone: phone_update.value,
     };
     console.log(update_data);
@@ -48,7 +48,7 @@ submit.addEventListener("click", () => {
   
   function delete_data(u) {
     axios.delete(u).then(() => {
-      console.log("Successfully Delete");
+      console.log("Successfully Deleted");
     });
   }
   
@@ -58,19 +58,16 @@ submit.addEventListener("click", () => {
       console.log(response.data[0]);
       var data= response.data;
       var name_get = document.getElementById("name_get");
-      var email_get = document.getElementById("email_get");
+      var address_get = document.getElementById("address_get");
       var phone_get = document.getElementById("phone_get");
-      // data.forEach(element => {
           
       // });
       name_get.value = data[0].name;
-      email_get.value = data[0].email;
+      address_get.value = data[0].address;
       phone_get.value = data[0].phone;
     });
     
   });
 
 
-
-// I AM INDIAN NOT NEPALI . . .SSSSS
   
